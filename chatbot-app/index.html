@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chatbot Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="chat-wrapper">
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="bot-avatar-small">
+        <div class="bot-face-small">
+          <span class="eye-s"></span>
+          <span class="eye-s"></span>
+        </div>
+      </div>
+      <div class="header-info">
+        <h2>AI Assistant</h2>
+        <span class="status-dot"></span><span class="status-text">Online</span>
+      </div>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="chat-messages" id="chatMessages">
+
+      <!-- Welcome Screen -->
+      <div class="welcome-screen" id="welcomeScreen">
+        <div class="robot-container">
+          <div class="robot">
+            <div class="robot-antenna"><div class="antenna-ball"></div></div>
+            <div class="robot-head">
+              <div class="robot-face">
+                <div class="robot-eyes">
+                  <div class="robot-eye"><div class="eye-shine"></div></div>
+                  <div class="robot-eye"><div class="eye-shine"></div></div>
+                </div>
+                <div class="robot-mouth"></div>
+              </div>
+            </div>
+            <div class="robot-body">
+              <div class="chat-icon">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="robot-hand left-hand"></div>
+            <div class="robot-hand right-hand"></div>
+          </div>
+        </div>
+
+        <div class="speech-bubble">
+          <p><strong>Hello! 👋</strong></p>
+          <p>I'm your AI assistant.<br/>How can I help you today?</p>
+        </div>
+
+        <div class="quick-options">
+          <button class="quick-btn" onclick="sendQuick('Answer a question for me')">
+            <span class="q-icon">❓</span> Answer questions
+          </button>
+          <button class="quick-btn" onclick="sendQuick('Explain a concept to me')">
+            <span class="q-icon">📘</span> Explain concepts
+          </button>
+          <button class="quick-btn" onclick="sendQuick('Give me a suggestion')">
+            <span class="q-icon">💡</span> Give suggestions
+          </button>
+          <button class="quick-btn" onclick="sendQuick('Let\\'s just chat!')">
+            <span class="q-icon">😊</span> Just chat
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Input Area -->
+    <div class="chat-input-area">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your message..."
+        autocomplete="off"
+        onkeydown="handleKey(event)"
+      />
+      <button class="send-btn" onclick="sendMessage()" id="sendBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
