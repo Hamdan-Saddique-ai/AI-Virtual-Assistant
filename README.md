@@ -1,6 +1,7 @@
 # 🤖 AI Virtual Assistant
 
 AI Virtual Assistant is a modern AI-powered chatbot designed to provide intelligent, fast, and human-like conversations through a clean and interactive interface. This project helps users ask questions, explain concepts, receive suggestions, and interact naturally with an advanced AI model.
+<img width="1254" height="1254" alt="Image" src="https://github.com/user-attachments/assets/9a6093af-b613-47c5-ad07-3b234971cf35" />
 
 The chatbot is built using HTML, CSS, and JavaScript with Groq API integration for ultra-fast AI responses. It can be easily deployed on platforms like Vercel, Netlify, GitHub Pages, Render, and Firebase Hosting.
 
